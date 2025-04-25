@@ -49,7 +49,7 @@ export default function Navbar() {
                 </ul>
                 <div className="hidden md:flex flex-shrink-0 items-center space-x-4">
                     <a
-                        href="https://wa.me/543584015151"
+                        href="https://wa.me/543584011515"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="border border-black p-2 rounded-full hover:bg-gray-100 transition"
@@ -65,7 +65,7 @@ export default function Navbar() {
                 </div>
                 <div className="flex md:hidden items-center space-x-2">
                     <a
-                        href="https://wa.me/543584015151"
+                        href="https://wa.me/543584011515"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="border border-black p-2 rounded-full hover:bg-gray-100 transition"

@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { FaPaperPlane, FaWhatsapp } from "react-icons/fa";
 import Image from "next/image";
@@ -11,67 +12,122 @@ export default function HomePage() {
 
   const productos = [
     {
-      brand: 'NAKATA',
-      line1: 'Kit de Junta',
-      line2: 'Homocinética',
-      subtitle: 'CORSA | AGILE | COROLLA | OTROS',
-      imageSrc: '/images/slidergen.PNG',
-      onPlusClick: () => console.log('plus 0'),
-      onArrowClick: () => console.log('arrow 0'),
+      brand: "KAVACO",
+      line1: "Aceite para caja",
+      line2: "Automática y manual",
+      subtitle: "",
+      imageSrc: "/images/recortes/aceite-caja-velocidad-autom-manual.png"
     },
     {
-      brand: 'SCHAEFFLER | LUK',
-      line1: 'Kit de',
-      line2: 'Embrague',
-      subtitle: 'CORSA 1.6 | CHEVROLET',
-      imageSrc: '/images/slidergen.PNG',
-      onPlusClick: () => console.log('plus 1'),
-      onArrowClick: () => console.log('arrow 1'),
+      brand: "ACDELCO",
+      line1: "Aceite de",
+      line2: "Motor",
+      subtitle: "",
+      imageSrc: "/images/recortes/aceite-motor-acdelco.png"
     },
     {
-      brand: 'SCHAEFFLER | LUK',
-      line1: 'Kit de',
-      line2: 'Embrague',
-      subtitle: 'CORSA 1.6 | CHEVROLET',
-      imageSrc: '/images/slidergen.PNG',
-      onPlusClick: () => console.log('plus 1'),
-      onArrowClick: () => console.log('arrow 1'),
+      brand: "GM ORIGINAL",
+      line1: "Kit distribución con bomba de agua y termostato",
+      line2: "",
+      subtitle: "AGILE | CORSA | COBALT | ONIX | MERIVA | PRISMA | SPIN",
+      imageSrc: "/images/recortes/kit-distribucion-bomba-de-agua-termostato-original-agile-corsa-etc.png"
     },
     {
-      brand: 'SCHAEFFLER | LUK',
-      line1: 'Kit de',
-      line2: 'Embrague',
-      subtitle: 'CORSA 1.6 | CHEVROLET',
-      imageSrc: '/images/slidergen.PNG',
-      onPlusClick: () => console.log('plus 1'),
-      onArrowClick: () => console.log('arrow 1'),
+      brand: "TOYOTA ORIGINAL",
+      line1: "Kit distribución original",
+      line2: "Toyota Hilux",
+      subtitle: "1KD / 2KD",
+      imageSrc: "/images/recortes/kit-distribucion-original-toyota-hilux.png"
     },
     {
-      brand: 'SCHAEFFLER | LUK',
-      line1: 'Kit de',
-      line2: 'Embrague',
-      subtitle: 'CORSA 1.6 | CHEVROLET',
-      imageSrc: '/images/slidergen.PNG',
-      onPlusClick: () => console.log('plus 1'),
-      onArrowClick: () => console.log('arrow 1'),
+      brand: "TOYOTA",
+      line1: "Kit distribución",
+      line2: "Toyota Hilux",
+      subtitle: "1KD / 2KD",
+      imageSrc: "/images/recortes/kit-distribucion-toyota-hilux.png"
     },
     {
-      brand: 'SCHAEFFLER | LUK',
-      line1: 'Kit de',
-      line2: 'Embrague',
-      subtitle: 'CORSA 1.6 | CHEVROLET',
-      imageSrc: '/images/slidergen.PNG',
-      onPlusClick: () => console.log('plus 1'),
-      onArrowClick: () => console.log('arrow 1'),
+      brand: "GM",
+      line1: "Kit distribución con bomba de agua y termostato",
+      line2: "",
+      subtitle: "AGILE | CORSA | COBALT | ONIX | MERIVA | PRISMA | SPIN",
+      imageSrc: "/images/recortes/kit-distribucion-bomba-de-agua-termostato-agile-corsa-etc.png"
     },
-    // añade más objetos según necesites
+    {
+      brand: "GM ORIGINAL",
+      line1: "Kit distribución",
+      line2: "",
+      subtitle: "CRUZE 1.8 16V | TRACKER 1.8 16V | SONIC 1.6 16V",
+      imageSrc: "/images/recortes/kit-distribucion-original-cruze18-tracker18-sonic-16.png"
+    },
+    {
+      brand: "ACDELCO",
+      line1: "Juego de ",
+      line2: "Cables y Bujías",
+      subtitle: "CHEVROLET",
+      imageSrc: "/images/recortes/juego-de-cables-y-bujias-chevrolet.png"
+    },
+    {
+      brand: "ACDELCO",
+      line1: "Amortiguador",
+      line2: "Delantero",
+      subtitle: "ORIGINAL CHEVROLET",
+      imageSrc: "/images/recortes/amortiguador-delantero-org-chevrolet.png"
+    },
+    {
+      brand: "ACDELCO",
+      line1: "Amortiguador",
+      line2: "Trasero",
+      subtitle: "ORIGINAL CHEVROLET",
+      imageSrc: "/images/recortes/amortiguador-trasero-org-chevrolet.png"
+    },
+    {
+      brand: "LUK",
+      line1: "Kit embrague",
+      line2: "S10 / Blazer 2.8TD",
+      subtitle: "MWM (258mm)",
+      imageSrc: "/images/recortes/kit-embrague-luk-s10.png"
+    },
+    {
+      brand: "ACDELCO",
+      line1: "Kit de",
+      line2: "Embrague",
+      subtitle: "ORIGINAL CHEVROLET",
+      imageSrc: "/images/recortes/kit-embrague-original-chevrolet.png"
+    },
+    {
+      brand: "GM",
+      line1: "Parrilla de",
+      line2: "Suspensión",
+      subtitle: "CRUZE 17",
+      imageSrc: "/images/recortes/parrilla-suspension-cruze-17.png"
+    },
+    {
+      brand: "GM",
+      line1: "Tapa de",
+      line2: "Distribución",
+      subtitle: "CORSA 1.4 / 1.6",
+      imageSrc: "/images/recortes/juego-tapa-distribucion-corsa-14.png"
+    },
+    {
+      brand: "MWM",
+      line1: "Kit embrague",
+      line2: "Original",
+      subtitle: "S10 / BLAZER 2.8TD MWM (258mm)",
+      imageSrc: "/images/recortes/kit-embrague-original-s10.png"
+    },
+    {
+      brand: "LUK",
+      line1: "Kit embrague",
+      line2: "Corsa 1.6",
+      subtitle: "",
+      imageSrc: "/images/recortes/kit-embrague-corsa-16.png"
+    }
   ];
+
   return (
     <>
-      <Hero />
-
-      {/* Tiempo record */}
-      <section className="bg-white grid grid-cols-2 items-center mx-auto justify-center h-115 px-5 text-center">
+      <Hero />      <section className="bg-white grid grid-cols-2 items-center mx-auto justify-center h-115 px-5 text-center">
         <div className="">
           <span className="text-2xl md:text-4xl font-normal mb-4">
             Si no tenemos el repuesto que necesitás,
@@ -86,7 +142,7 @@ export default function HomePage() {
           </p>
           <div className="flex items-center gap-1 max-w-2xl mx-auto">
             <a
-              href="https://wa.me/543584015151"
+              href="https://wa.me/543584011515"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-black p-2 rounded-full hover:bg-gray-100 transition text-xl md:text-3xl lg:text-4xl"
@@ -105,7 +161,6 @@ export default function HomePage() {
 
       <ObjectSlider items={productos} SlideComponent={SlideCard} />
       <Workers />
-      {/* Rapidez en envíos */}
       <section className="bg-white grid grid-cols-2 items-center mx-auto justify-center h-115 px-5 text-center">
         <div className="">
           <span className="text-2xl md:text-4xl font-normal mb-4">
@@ -123,7 +178,7 @@ export default function HomePage() {
 
           <div className="flex items-center gap-1 max-w-2xl mx-auto">
             <a
-              href="https://wa.me/543584015151"
+              href="https://wa.me/543584011515"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-black p-2 rounded-full hover:bg-gray-100 transition text-xl md:text-3xl lg:text-4xl"

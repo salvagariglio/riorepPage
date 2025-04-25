@@ -34,8 +34,8 @@ export default function SlideCard({
             </div>
 
             <div
-                className="absolute left-1/2 -bottom-6 transform -translate-x-1/2 translate-y-1/2
-                    w-32 h-32 sm:w-40 sm:h-40 md:w-38 md:h-38 lg:w-36 lg:h-36
+                className="absolute left-1/2 bottom-1 transform -translate-x-1/2 translate-y-1/2
+                    w-32 h-32 sm:w-60 sm:h-60 md:w-60 md:h-60 lg:w-60 lg:h-60
                     overflow-visible z-50 transition"
             >
                 <Image
