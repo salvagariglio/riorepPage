@@ -155,7 +155,7 @@ export default function HomePage() {
             </a>
             <a
               href="wa.link/qobkad"
-              className="inline-block text-xs  md:text-lg bg-blue-700 hover:bg-blue-800 text-white font-medium px-0.5 md:px-6 py-3 rounded-3xl transition"
+              className="inline-block text-xs  md:text-lg bg-[#0054A6] hover:bg-[#0054A6] text-white font-medium px-0.5 md:px-6 py-3 rounded-3xl transition"
             >
               +54 9 3584 01-1515
             </a>

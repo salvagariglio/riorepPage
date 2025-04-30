@@ -8,7 +8,6 @@ import Image from "next/image";
 export default function Hero({ backgroundImage, headingText }) {
     return (
         <section className="relative h-screen w-full overflow-hidden">
-            {/* Imagen de fondo */}
             <div
                 className="absolute inset-0 bg-cover bg-right"
                 style={{
@@ -16,11 +15,7 @@ export default function Hero({ backgroundImage, headingText }) {
                     zIndex: 0,
                 }}
             />
-
-            {/* Capa oscura */}
             <div className="absolute inset-0 bg-black/50 z-10" />
-
-            {/* Contenido */}
             <div className="relative z-20 max-w-7xl mx-auto h-full grid grid-cols-1 md:grid-cols-2 items-center px-4">
                 <div className="space-y-6 text-white">
                     <div className="flex items-center space-x-6 mb-6">

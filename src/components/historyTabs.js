@@ -46,7 +46,7 @@ export default function SimpleTabs() {
                 w-full h-full flex flex-col items-center justify-center
                 px-4 py-6 transition rounded-md 
                 ${isActive
-                                    ? 'bg-blue-800 text-white clip-path-[polygon(0_0,85%_0,100%_50%,85%_100%,0_100%)] shadow-lg'
+                                    ? 'bg-[#0054A6] text-white clip-path-[polygon(0_0,85%_0,100%_50%,85%_100%,0_100%)] shadow-lg'
                                     : 'text-gray-700  hover:bg-gray-200'
                                 }
                 `}
@@ -65,7 +65,7 @@ export default function SimpleTabs() {
             <div className="flex-1 bg-white rounded-lg shadow-md overflow-hidden">
                 <div className="p-6 space-y-4">
                     <h2 className="text-3xl md:text-4xl font-medium">{current.title}</h2>
-                    <div className="w-16 h-1 bg-blue-800"></div>
+                    <div className="w-16 h-1 bg-[#0054A6]"></div>
                     <p className="text-gray-700 md:text-xl text-lg">{current.content}</p>
                     {current.images.length > 0 && (
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
