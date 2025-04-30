@@ -59,12 +59,12 @@ export default function Hero({ backgroundImage, headingText, bgPosition = 'right
                         <p className="p-2 border border-white rounded-full">
                             <FaRegStar className="w-6 h-6 text-white" />
                         </p>
-                        <a
+                        <Link
                             href="/contacto"
                             className="inline-flex items-center space-x-2 bg-red-600 hover:bg-red-700 pl-8 pr-2 rounded-3xl transition"
                         >
                             <LiaLongArrowAltRightSolid className="w-8 h-8 text-white" />
-                        </a>
+                        </Link>
                         <span className="text-white font-light">CONTACTATE CON NOSOTROS</span>
                     </div>
                 </div>

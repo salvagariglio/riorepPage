@@ -110,7 +110,7 @@ export default function ProductSlider({ items = [] }) {
             </section>
 
             <div className="flex justify-center  pb-20 bg-transparent">
-                <Link href="https://www.chevrolet.com.ar/">
+                <div>
                     <Image
                         src="/images/logo-white.png"
                         alt="Logo Chevrolet"
@@ -118,7 +118,7 @@ export default function ProductSlider({ items = [] }) {
                         width={300}
                         height={100}
                     />
-                </Link>
+                </div>
             </div>
         </div>
     );
