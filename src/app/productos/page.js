@@ -41,6 +41,7 @@ export default function ProductosPage() {
                 backgroundImage="/images/hero-products.jpg"
                 headingText={`Conoce nuestros<br />productos destacados<br />para Toyota y Chevrolet`}
                 bgPosition="left"
+                bgPositionMobile="35% center"
             />
             <ProductSlider items={productos} />
             <Workers

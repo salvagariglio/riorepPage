@@ -57,7 +57,7 @@ export default function Navbar() {
                         <FaWhatsapp size={30} />
                     </a>
                     <a
-                        href="wa.link/qobkad"
+                        href="https://wa.me/543584011515"
                         className="hidden lg:inline-block text-lg bg-red-600 hover:bg-red-700 text-white font-medium px-8 py-3 rounded-3xl transition"
                     >
                         +54 9 3584 01-1515

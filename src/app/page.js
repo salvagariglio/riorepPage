@@ -1,8 +1,6 @@
 "use client";
 
-import Link from "next/link";
 import { FaPaperPlane, FaWhatsapp } from "react-icons/fa";
-import Image from "next/image";
 import Hero from "@/components/Hero";
 import Workers from "@/components/Workers";
 import MainSlider from '@/components/MainSlider';
@@ -47,6 +45,7 @@ export default function HomePage() {
         backgroundImage="/images/hero-bg.jpg"
         headingText={`Venta de repuestos,<br />autopartes y accesorios<br />para Toyota y Chevrolet`}
         bgPosition="right"
+        bgPositionMobile="85% center"
       />
       <section className="bg-white grid grid-cols-2 items-center mx-auto justify-center h-115 px-5 text-center">
         <div className="">
@@ -71,7 +70,7 @@ export default function HomePage() {
               <FaWhatsapp />
             </a>
             <a
-              href="wa.link/qobkad"
+              href="https://wa.me/543584011515"
               className="inline-block text-xs  md:text-lg bg-[#0054A6] hover:bg-[#0054A6] text-white font-medium px-0.5 md:px-6 py-3 rounded-3xl transition"
             >
               +54 9 3584 01-1515
@@ -113,7 +112,7 @@ export default function HomePage() {
               <FaPaperPlane />
             </a>
             <a
-              href="wa.link/qobkad"
+              href="https://wa.me/543584011515"
               className="inline-block text-xs  md:text-lg bg-red-600 hover:bg-red-700 text-white font-medium px-0.5 md:px-8 py-3 rounded-3xl transition"
             >
               +54 9 3584 01-1515
