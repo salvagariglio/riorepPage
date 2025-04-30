@@ -3,15 +3,14 @@ import { FaRegStar } from "react-icons/fa";
 import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 import Image from "next/image";
 
-
-
-export default function Hero({ backgroundImage, headingText }) {
+export default function Hero({ backgroundImage, headingText, bgPosition = 'right' }) {
     return (
         <section className="relative h-screen w-full overflow-hidden">
             <div
-                className="absolute inset-0 bg-cover bg-right"
+                className="absolute inset-0 bg-cover"
                 style={{
                     backgroundImage: `url('${backgroundImage}')`,
+                    backgroundPosition: bgPosition,
                     zIndex: 0,
                 }}
             />

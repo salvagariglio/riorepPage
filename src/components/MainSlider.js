@@ -17,7 +17,6 @@ export default function ProductSlider({ items = [] }) {
     const nextRef = useRef(null);
     const [isMounted, setIsMounted] = useState(false);
 
-    // Esperamos a que el componente esté montado para que las refs estén listas
     useEffect(() => {
         setIsMounted(true);
     }, []);

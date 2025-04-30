@@ -32,6 +32,7 @@ export default function ProductosPage() {
         {
             imageSrc: "/images/recortes/9.png"
         },
+
     ];
 
     return (
@@ -39,6 +40,7 @@ export default function ProductosPage() {
             <Hero
                 backgroundImage="/images/hero-products.jpg"
                 headingText={`Conoce nuestros<br />productos destacados<br />para Toyota y Chevrolet`}
+                bgPosition="left"
             />
             <ProductSlider items={productos} />
             <Workers

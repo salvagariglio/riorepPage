@@ -9,11 +9,9 @@ export default function VideoSection({ videoSrc }) {
         const videoEl = videoRef.current;
         if (!videoEl) return;
 
-        // Asegurar que el video esté muteado para permitir autoplay
         videoEl.muted = true;
         videoEl.playsInline = true;
 
-        // Observer para reproducir/pausar al entrar/salir de viewport
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
