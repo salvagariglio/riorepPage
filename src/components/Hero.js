@@ -3,18 +3,28 @@ import { FaRegStar } from "react-icons/fa";
 import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 import Image from "next/image";
 
-export default function Hero() {
-    return (
-        <section
-            className="relative h-screen bg-cover bg-center w-full"
-            style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
-        >
-            <div className="absolute inset-0 bg-black/50" />
 
-            <div className="relative z-10 max-w-7xl mx-auto h-full grid grid-cols-1 md:grid-cols-2 items-center px-4">
+
+export default function Hero({ backgroundImage, headingText }) {
+    return (
+        <section className="relative h-screen w-full overflow-hidden">
+            {/* Imagen de fondo */}
+            <div
+                className="absolute inset-0 bg-cover bg-right"
+                style={{
+                    backgroundImage: `url('${backgroundImage}')`,
+                    zIndex: 0,
+                }}
+            />
+
+            {/* Capa oscura */}
+            <div className="absolute inset-0 bg-black/50 z-10" />
+
+            {/* Contenido */}
+            <div className="relative z-20 max-w-7xl mx-auto h-full grid grid-cols-1 md:grid-cols-2 items-center px-4">
                 <div className="space-y-6 text-white">
                     <div className="flex items-center space-x-6 mb-6">
-                        <Link href='https://www.chevrolet.com.ar/'>
+                        <Link href="https://www.chevrolet.com.ar/">
                             <Image
                                 src="/images/chevrolet.png"
                                 alt="Chevrolet"
@@ -26,7 +36,7 @@ export default function Hero() {
 
                         <div className="w-px h-10 bg-white" />
 
-                        <Link href='https://www.toyota.com.ar/'>
+                        <Link href="https://www.toyota.com.ar/">
                             <Image
                                 src="/images/toyota3.png"
                                 alt="Toyota"
@@ -37,15 +47,14 @@ export default function Hero() {
                         </Link>
                     </div>
 
-                    <h1 className="text-3xl md:text-5xl leading-snug">
-                        Venta de repuestos,<br />
-                        autopartes y accesorios<br />
-                        para Toyota y Chevrolet
-                    </h1>
+                    <h1
+                        className="text-3xl md:text-5xl leading-snug"
+                        dangerouslySetInnerHTML={{ __html: headingText }}
+                    />
 
-                    <div className="flex items-center space-x-4  ">
+                    <div className="flex items-center space-x-4">
                         <p className="p-2 border border-white rounded-full">
-                            <FaRegStar className="w-6 h-6 text-white " />
+                            <FaRegStar className="w-6 h-6 text-white" />
                         </p>
                         <a
                             href="/contacto"

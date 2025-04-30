@@ -5,7 +5,7 @@ import { FaPaperPlane, FaWhatsapp } from "react-icons/fa";
 import Image from "next/image";
 import Hero from "@/components/Hero";
 import Workers from "@/components/Workers";
-import ObjectSlider from '@/components/ObjectSlider';
+import MainSlider from '@/components/MainSlider';
 import SlideCard from '@/components/SlideCard';
 
 export default function HomePage() {
@@ -127,7 +127,11 @@ export default function HomePage() {
 
   return (
     <>
-      <Hero />      <section className="bg-white grid grid-cols-2 items-center mx-auto justify-center h-115 px-5 text-center">
+      <Hero
+        backgroundImage="/images/hero-bg.jpg"
+        headingText={`Venta de repuestos,<br />autopartes y accesorios<br />para Toyota y Chevrolet`}
+      />
+      <section className="bg-white grid grid-cols-2 items-center mx-auto justify-center h-115 px-5 text-center">
         <div className="">
           <span className="text-2xl md:text-4xl font-normal mb-4">
             Si no tenemos el repuesto que necesitás,
@@ -159,8 +163,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <ObjectSlider items={productos} SlideComponent={SlideCard} />
-      <Workers />
+      <MainSlider items={productos} SlideComponent={SlideCard} />
+      <Workers
+        images={[
+          "/images/front1.jpg",
+          "/images/front2.jpg",
+          "/images/front3.jpg"
+        ]}
+      />
       <section className="bg-white grid grid-cols-2 items-center mx-auto justify-center h-115 px-5 text-center">
         <div className="">
           <span className="text-2xl md:text-4xl font-normal mb-4">

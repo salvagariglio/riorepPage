@@ -1,20 +1,19 @@
 import Image from "next/image";
 
-export default function Workers() {
+export default function Workers({ images }) {
     return (
         <div className="bg-black w-full grid grid-cols-2 md:grid-cols-3 gap-0">
-            {[1, 2, 3].map((i, idx) => (
+            {images.map((imgSrc, idx) => (
                 <div
-                    key={i}
+                    key={idx}
                     className={`
-                        ${idx === 2 ? "hidden md:block" : ""}  /* oculta el tercero <768px */
-                        relative w-full
-                        h-[300px]  lg:h-[500px]
-                        `}
+                        ${idx === 2 ? "hidden md:block" : ""}
+                        relative w-full h-[300px] lg:h-[500px]
+                    `}
                 >
                     <Image
-                        src={`/images/front${i}.jpg`}
-                        alt={`Trabajador ${i}`}
+                        src={imgSrc}
+                        alt={`Trabajador ${idx + 1}`}
                         fill
                         quality={75}
                         className="object-cover"

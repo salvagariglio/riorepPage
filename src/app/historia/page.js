@@ -10,7 +10,7 @@ export default function HistoriaPage() {
                 <Tabs />
             </div>
             <VideoSection
-                videoSrc="/videos/video3.mp4"
+                videoSrc="/images/videos/video3.mp4"
                 posterSrc="/images/video-poster.jpg"
             />
             <div>

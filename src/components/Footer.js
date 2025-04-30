@@ -35,7 +35,7 @@ export default function Footer() {
                                 href="https://www.facebook.com/riorepsas/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-blue-900 p-3 rounded-full text-white hover:bg-blue-950 transition"
+                                className="bg-[#0054A6] p-3 rounded-full text-white hover:bg-blue-950 transition"
                             >
                                 <FaFacebookF size={30} />
                             </a>
@@ -43,7 +43,7 @@ export default function Footer() {
                                 href="https://www.instagram.com/riorepsas/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-blue-900 p-3 rounded-full text-white hover:bg-blue-950 transition"
+                                className="bg-[#0054A6] p-3 rounded-full text-white hover:bg-blue-950 transition"
                             >
                                 <FaInstagram size={30} />
                             </a>
@@ -51,7 +51,7 @@ export default function Footer() {
                                 href="https://linkedin.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-blue-900 p-3 rounded-full text-white hover:bg-blue-950 transition"
+                                className="bg-[#0054A6] p-3 rounded-full text-white hover:bg-blue-950 transition"
                             >
                                 <FaLinkedinIn size={30} />
                             </a>

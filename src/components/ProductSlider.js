@@ -10,12 +10,12 @@ import 'swiper/css/pagination';
 import SlideCard from './SlideCard';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-export default function ObjectSlider({ items }) {
+export default function ProductSlider({ items }) {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
 
     return (
-        <section className="relative bg-red-500 h-[600px] px-4 sm:px-6 md:px-14 overflow-visible flex items-center">
+        <section className="relative bg-[#0054A6] h-[600px] px-4 sm:px-6 md:px-14 overflow-visible flex items-center">
             <div
                 ref={prevRef}
                 className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20"

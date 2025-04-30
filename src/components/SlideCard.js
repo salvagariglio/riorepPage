@@ -21,7 +21,7 @@ export default function SlideCard({
                 </span>
                 <button
                     onClick={() => router.push('/productos')}
-                    className="text-black hover:text-blue-700 transition z-10"
+                    className="text-black hover:text-[#0054A6] transition z-10"
                 >
                     <FaArrowRight className="w-[clamp(1rem,2vw,1.5rem)] h-[clamp(1rem,2vw,1.5rem)]" />
                 </button>
