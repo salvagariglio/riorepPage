@@ -122,7 +122,7 @@ export default function ProductosPage() {
     return (
         <section className="min-h-screen">
             <Hero
-                backgroundImage="/images/hero-bg.jpg"
+                backgroundImage="/images/hero-products.jpg"
                 headingText={`Conoce nuestros<br />productos destacados<br />para Toyota y Chevrolet`}
             />
             <ProductSlider items={productos} />
