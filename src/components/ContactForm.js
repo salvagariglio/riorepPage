@@ -13,7 +13,7 @@ export default function ContactForm() {
             </div>
 
             <form
-                action="https://getform.io/f/pamqklda"
+                action="https://getform.io/f/agdpelob"
                 method="POST"
                 encType="multipart/form-data"
                 className="max-w-3xl mx-auto"
